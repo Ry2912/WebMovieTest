@@ -7,7 +7,16 @@ function square(number)
 // {
 //     let qst = document.getElementById('question');
 // }
-let qst = document.getElementById('question');
+
+var qst;
+
+function onClick()
+{
+    qst = document.getElementById('question').value;
+    document.querySelector('.balloon1-top').innerHTML = qst;
+}
+
+//qst = document.getElementById('question').value;
 
 var random = Math.random();
 
@@ -26,3 +35,5 @@ else
     document.write(b + ", ");
     document.write(random);
 }
+document.write(qst);
+document.write("</h1>");

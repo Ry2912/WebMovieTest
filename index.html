@@ -20,8 +20,8 @@
         <label>           
             <form action="/search", method="post">
              質問：
-                <input type="text" size="100" value="何を尋ねますか？">
-                <input type="submit", value="search">
+                <input type="text" id="question" size="100" value="何を尋ねますか？">
+                <input type="button" value="search" onclick="onClick()">
             </form>
         </label>
     </div>
@@ -31,7 +31,7 @@
         
         <div class="balloon1-top">
             <p>ふきだし</p>
-            <script src="words.js"></script>
+            <script src="answer.js"></script>
         </div>
         
         <video src="video/SORA1.mp4" loop autoplay muted></video>
